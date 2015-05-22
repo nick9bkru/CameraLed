@@ -11,6 +11,6 @@ string Cmd::getCommand()
 
 void Cmd::setCamera ( Camera * _camera )
 {
-  cout << "void Cmd::setCamera ( Camera * _camera )  "<< command<< endl;
+  //cout << "void Cmd::setCamera ( Camera * _camera )  "<< command<< endl;
   camera = _camera;
 };

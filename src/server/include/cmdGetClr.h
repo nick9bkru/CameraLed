@@ -2,7 +2,7 @@
 #define CMDGETCLR_H
 #include "Cmd.h"
 /** @class cmdGetClr
-	@brief Базовый класс для всех команд
+	@brief Класс команды для получения цвета LED
 */
 
 class cmdGetClr: public Cmd

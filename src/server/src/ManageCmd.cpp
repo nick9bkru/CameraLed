@@ -37,6 +37,7 @@ void ManageCmd::initCmd()
 
 string  ManageCmd::newCmd( string cmd)
 {
+ lock_guard<std::mutex> locker(_lock);
  cout << "ManageCmd::newCmd cmd == " << cmd << endl; 
  pair< pSTRING > pCmd;
  pCmd =  parseCmd( cmd );
@@ -62,5 +63,5 @@ pair< pSTRING > ManageCmd::parseCmd ( string _cmd)
     arg = _cmd.substr( k + 1, _cmd.length() );
   }
   cmd = _cmd.substr( 0, k );
-  return make_pair< pSTRING >(cmd , arg) ;
+  return make_pair< pSTRING >(string(cmd),string(arg));
 };

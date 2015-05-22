@@ -3,6 +3,7 @@
 
 #define pSTRING string, string
 #include <map>
+#include <mutex> 
 #include "cmdGetClr.h"
 #include "cmdGetRate.h"
 #include "cmdGetState.h"
@@ -37,6 +38,8 @@ private:
   
   /** @brief разбираем команду пришедшую от клиента */
   pair< pSTRING > parseCmd ( string _cmd);
+  /** @brief mutex */
+  std::mutex _lock;
   
 };
 

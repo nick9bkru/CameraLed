@@ -57,6 +57,7 @@ ${HEADERS_DIRECTORY}/Camera.h
 ${HEADERS_DIRECTORY}/ManageCmd.h
 ${HEADERS_DIRECTORY}/OperateFifo.h
 ${HEADERS_DIRECTORY}/define.h
+${HEADERS_DIRECTORY}/FindFifo.h
 )
 ##############################################
 set(SOURCES
@@ -71,6 +72,7 @@ ${SOURCES_DIRECTORY}/cmdSetState.cpp
 ${SOURCES_DIRECTORY}/Camera.cpp
 ${SOURCES_DIRECTORY}/OperateFifo.cpp
 ${SOURCES_DIRECTORY}/ManageCmd.cpp
+${SOURCES_DIRECTORY}/FindFifo.cpp
 )
 
 ###############################################
@@ -82,7 +84,7 @@ include_only_headers(${HEADERS}})
 
 ################################################
 message( "######## add_definitions")
-add_definitions(-pipe -O2 -Wall -Wunused-parameter -g -ggdb -fPIC -D_REENTRANT -W ) #для профилировщика gprof
+add_definitions(-pipe -O2 -Wall -Wunused-parameter -g -ggdb -fPIC -D_REENTRANT -W -std=c++11 ) #для профилировщика gprof
 message( "######## add_executable")
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
 

@@ -8,8 +8,7 @@ cmdSetRate::cmdSetRate(Camera * _camera):Cmd("set-led-rate")
 
 string cmdSetRate::getRequest( string arg )
 {
-  int freq = strtol(arg.c_str(),0,10);;
-  
+  int freq = stoi(arg.c_str());
   if ( ( freq < 0 ) || ( freq > 5 ))
   {
     request =  FAILED;

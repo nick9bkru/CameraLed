@@ -3,7 +3,7 @@
 
 #include "Cmd.h"
 /** @class cmdSetRate
-	@brief Базовый класс для всех команд
+	@brief Класс команды для установки частоты
 */
 
 class cmdSetRate: public Cmd

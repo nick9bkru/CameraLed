@@ -3,7 +3,7 @@
 
 #include "Cmd.h"
 /** @class cmdGetRate
-	@brief Базовый класс для всех команд
+	@brief Класс команды для получения частоты 
 */
 
 class cmdGetRate: public Cmd

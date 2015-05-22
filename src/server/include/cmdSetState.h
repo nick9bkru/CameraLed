@@ -4,7 +4,7 @@
 #include "Cmd.h"
 
 /** @class Cmd
-	@brief Базовый класс для всех команд
+	@brief Класс команды для установки состояния
 */
 
 class cmdSetState: public Cmd

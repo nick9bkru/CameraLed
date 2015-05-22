@@ -3,7 +3,7 @@
 
 #include "Cmd.h"
 /** @class cmdSetClr
-	@brief Базовый класс для всех команд
+	@brief Класс команды для установки цвета
 */
 const string RED = "red";
 const string GREEN = "green";

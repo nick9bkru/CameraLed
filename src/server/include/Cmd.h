@@ -37,7 +37,7 @@ protected:
   string command;
   /** @brief ответ  */
   string request;
-  
+  /** @brief Указатель на экземпляр указателя класса камеры  */
   Camera * camera; 
 };
 
